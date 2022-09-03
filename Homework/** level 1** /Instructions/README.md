@@ -15,9 +15,15 @@
 
 ## Background
 
-In this assignment you will put your ETL skills to the test. Many of Amazon's shoppers depend on product reviews to make a purchase. Amazon makes these datasets publicly available. However, they are quite large and can exceed the capacity of local machines to handle. One dataset alone contains over 1.5 million rows; with over 40 datasets, this can be quite taxing on the average local computer. Your first goal for this assignment will be to perform the ETL process completely in the cloud and upload a DataFrame to an RDS instance. The second goal will be to use PySpark or SQL to perform a statistical analysis of selected data.
+In this assignment you will put your ETL skills to the test. Many of Amazon's shoppers depend on product reviews to make a purchase. Amazon makes these datasets publicly available. However, they are quite large and can exceed the capacity of local machines to handle. One dataset alone contains over 1.5 million rows; with over 40 datasets, this can be quite taxing on the average local computer. 
 
-There are two levels to this homework assignment. The second level is optional but highly recommended.
+
+
+Your first goal for this assignment will be to perform the ETL process completely in the cloud and upload a DataFrame to an RDS instance. The second goal will be to use PySpark or SQL to perform a statistical analysis of selected data.
+
+There are two levels to this homework assignment. 
+
+The second level is optional but highly recommended.
 
 1. Create DataFrames to match production-ready tables from two big Amazon customer review datasets.
 2. Analyze whether reviews from Amazon's Vine program are trustworthy.
@@ -70,8 +76,8 @@ But are Vine reviews truly trustworthy? Your task is to investigate whether Vine
 import os
 # Find the latest version of spark 3.0  from http://www-us.apache.org/dist/spark/ and enter as the spark version
 # For example:
-# spark_version = 'spark-3.0.1'
-spark_version = 'spark-3.<spark version>'
+# spark_version = 'spark-3.0.1'-- make sure to update to the newest version in htis case 3.1.3 
+spark_version = 'spark-3.1.3'
 os.environ['SPARK_VERSION']=spark_version
 
 # Install Spark and Java
